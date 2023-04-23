@@ -37,7 +37,7 @@ int getNumberFromUser()
 
 int main()
 {
-    int n = getNumberFromUser();
+    int n = getNumberFromUser();    // get Number
     printDivisibilty(n);
 
     return 0;
