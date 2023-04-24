@@ -9,6 +9,5 @@ int main()
      printf("p value: %p\n", p);
      printf("p mem addr: %p\n", &p);    // &variable => mem addr.
      printf("p deref: %d\n", *p);
-
     return 0;
 }
