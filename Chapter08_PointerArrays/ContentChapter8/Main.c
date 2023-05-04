@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "Lib.h"
 
 int *createArray(unsigned int length, int value)
 {
@@ -87,7 +88,7 @@ int main()
     {
         for (unsigned int j = 0; j < num_cols; j++)
         {
-            matrix[i][j] = (i + 1) * j;
+            matrix[i][j] = (int)((i + 1) * j);
         }
     }
     printMatrix(matrix, num_rows, num_cols);

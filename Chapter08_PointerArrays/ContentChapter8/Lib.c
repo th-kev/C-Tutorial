@@ -174,6 +174,22 @@ void printMatrix(int **p_matrix, unsigned int num_rows, unsigned int num_cols)
     }
 }
 
+int **transposeMatrix(int **matrix, unsigned int num_rows, unsigned int num_columns)
+{
+    //int **p_transposeMatrix = (int **)malloc(num_columns * sizeof(int *));
+
+    int **p_transposeMatrix = createMatrix(num_columns, num_rows, 0);
+    for (unsigned int i = 0; i < num_rows; i++)
+    {
+        for (unsigned int j = 0; j < num_columns; j++)
+        {
+            p_transposeMatrix[j][i] = matrix[i][j];
+        }
+
+    }
+    return p_transposeMatrix;
+}
+
 int **freeMatrix(int **p_matrix, unsigned int num_rows)
 {
     for (unsigned int i = 0; i < num_rows; i++)
