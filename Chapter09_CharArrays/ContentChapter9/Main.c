@@ -4,6 +4,24 @@
 
 char *join(char *delimiter, char **list)
 {
+    if (**list == NULL)
+    {
+        return NULL;
+    }
+    delimiter[5] = " -> ";
+    size_t i = 0;
+    char *str;
+    while (*list[i] != NULL)
+    {
+        if (*list[i+1] != NULL)
+        {
+
+        }
+
+    }
+
+
+
 }
 
 int main()
