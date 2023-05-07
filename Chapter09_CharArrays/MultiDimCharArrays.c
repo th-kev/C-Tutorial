@@ -37,7 +37,7 @@ int main()
 
     strcpy(friends[0], "Kevin Theiss");
     strcpy(friends[1], "Alisa Kalinina");
-    strcpy(friends[2], "Fabiano Cimiro");
+    strcpy(friends[2], "Fabiano Cimirro");
 
     for (unsigned int i = 0; i < number_friends; i++)
     {
