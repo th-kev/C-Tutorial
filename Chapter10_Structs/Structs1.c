@@ -13,7 +13,7 @@ int main()
 {
     struct Friend jan = {.name = "Schaffranked", .prename = "Jan", .year = 1994u, .month = 2u, .day = 24u};
     struct Friend peter = {.name = "Lustig", .prename = "Peter", .year = 1959u, .month = 8u, .day = 13u};
-    struct Friend hans = {.name = "Maier", .prename = "Peter", .year = 1970u, .month = 12u, .day = 31u};
+    struct Friend hans = {.name = "Maier", .prename = "Hans", .year = 1970u, .month = 12u, .day = 31u};
 
     printf("Name: %s\n", jan.name);
     printf("Prename: %s\n", jan.prename);
