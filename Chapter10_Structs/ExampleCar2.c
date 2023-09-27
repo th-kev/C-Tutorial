@@ -46,6 +46,5 @@ int main()
                     .is_histotic = false}
     };
 
-
     return 0;
 }
