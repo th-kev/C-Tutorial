@@ -7,7 +7,7 @@
 #define FOLDER_LEN (size_t)(256)
 #define FILE_LEN (size_t)(128)
 
-#define DEFAULT_PROJECT_PATH "C:/Users/kevin/Code/C/Tutorial/C-Tutorial/Chapter16_SimpleCSVReader"
+#define DEFAULT_PROJECT_PATH "C:/Users/kevin/Code/C/Tutorial/C-Tutorial/Chapter16_SimpleCSVReader/"
 #define DEFAULT_INPUT_FILENAME "data_in.csv"
 #define DEFAULT_OUTPUT_FILENAME "data_out.csv"
 
