@@ -22,16 +22,20 @@ void *functions(void *args) // Immer der Aubfbau der Funktion, wenn Thread gemac
     int *result = (int *)malloc(sizeof(int));
     *result = arg_i32 * 2;
 
+    int32_t local_counter = 0;
+
     for (int32_t i = 0; i < NUM_ITERATIONS; i++)
     {
+        ++local_counter;
+    }
+
 #ifdef USE_MUTEX
         pthread_mutex_lock(&mutex);
-        ++global_counter;
+        global_counter += local_counter;
         pthread_mutex_unlock(&mutex);
 #else
         ++global_counter;
 #endif
-    }
 
 
     pthread_exit((void *)(result));
